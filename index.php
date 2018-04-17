@@ -22,9 +22,11 @@
 	
 	
 	foreach ($json as $key => $val ){
+		//print_r ($val);
 		echo '<tr>';
-		foreach ($val as $about ){
-			echo '<td> ' . $about . '</td>';
+		foreach ($json [0] as $pole => $about ){
+			//echo $pole . "\n";
+			echo '<td> ' . ($val [$pole]) . '</td>';
 		}
 		echo '</tr>';
 	
