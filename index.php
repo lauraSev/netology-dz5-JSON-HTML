@@ -19,17 +19,20 @@
 		echo '<th> ' . $key . ' </th>';
 	}
 	echo '</tr>';
-	
-	
 	foreach ($json as $key => $val ){
 		//print_r ($val);
-		echo '<tr>';
-		foreach ($json [0] as $pole => $about ){
-			//echo $pole . "\n";
-			echo '<td> ' . ($val [$pole]) . '</td>';
-		}
-		echo '</tr>';
-	
+		echo '<tr><td>';
+		echo $val ["firstName"];
+		echo '</td>';
+		echo '<td>';
+		echo $val ["lastName"];
+		echo '</td>';
+		echo '<td>';
+		echo $val ["address"];
+		echo '</td>';
+		echo '<td>';
+		echo $val ["phoneNumber"];
+		echo '</td></tr>';
 	}
 	echo '</table>'
 	
